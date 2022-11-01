@@ -1,30 +1,51 @@
 <!doctype html>
 <html lang="es">
+
 <head>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios Javascript</title>
 
-    <script>
-        var num1 = 10
-        var num2 = 4
-        var num3 = 15
-
-        if(num1 > num2 && num1 > num3){
-            console.log("El numero mayor es", num1);
-        }else if(num2 > num1 && num2 > num3){
-            console.log("El numero mayor es", num2);
-        }else{
-            console.log("El numero mayor es", num3);
-        }
+    <script src="funciones.js">
 
     </script>
-    
+
 </head>
-<body>
 
-</body>
+    <body onload="mostrarMensaje('Estoy cargando la pagina jijiji')">
+        
+        <form>
+            <fieldset>
+
+                <legend>Ingrese tres numeros</legend>
+
+                <label for="txtNumero1">Numero 1</label>
+                <input type="text" value="0" id="txtNumero1" name="txtNumero1">
+                
+                <br>
+                <br>
+
+                <label for="txtNumero2">Numero 2</label>
+                <input type="text" value="0" id="txtNumero2" name="txtNumero2">
+
+
+                <br>
+                <br>
+
+                <label for="txtNumero3">Numero 3</label>
+                <input type="text" value="0" id="txtNumero3" name="txtNumero3">
+
+            </fieldset>
+            <br>
+            <input type="button" value="Obtener el mayor" name="btnCalcular" onclick="obtenerMayor(parseInt(document.getElementById('txtNumero1').value), parseInt(document.getElementById('txtNumero2').value), parseInt(document.getElementById('txtNumero3').value))">
+        </form>
+
+        <h3>Resultados</h3>
+        <span id="resultado"></span>
+        
+
+    </body>
+
 </html>
-
