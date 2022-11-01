@@ -142,6 +142,7 @@
         Ejercicio 8.
         Muestra mensajes con alert.
         */
+       
         function mostrarMensaje(mensaje){
             alert(mensaje)
         }
