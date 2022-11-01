@@ -9,7 +9,6 @@
     <title>Ejercicios Javascript</title>
 
     <script src="funciones.js">
-
     </script>
 
 </head>
@@ -17,12 +16,13 @@
     <body onload="mostrarMensaje('Estoy cargando la pagina jijiji')" onunload="mostrarMensaje('Estoy saliendo jijiji')" onresize="mostrarMensaje('Estoy modificando la ventana jijiji')">
         
         <form>
+
             <fieldset>
 
                 <legend>Ingrese tres numeros</legend>
 
                 <label for="txtNumero1">Numero 1</label>
-                <input type="text" value="0" id="txtNumero1" name="txtNumero1">
+                <input type="text" value="0" id="txtNumero1" name="txtNumero1" onblur="mostrarMensaje('Adios txtNumero1! He perdido el enfoque jijiji')">
                 
                 <br>
                 <br>
