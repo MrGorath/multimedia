@@ -88,10 +88,10 @@ function generarTablaHTML(valFilas, valColumnas) {
     var TablaFC = document.getElementById('tblFilas_y_Columnas')
     var FxC = valFilas * valColumnas
     
-    while (contadorFilas < valFilas) {        
+    while (contadorFilas < valFilas){        
         filasActuales = TablaFC.insertRow(contadorFilas)
 
-        while (contadorColumnas < valColumnas) {            
+        while (contadorColumnas < valColumnas){            
             columnasActuales = filasActuales.insertCell(contadorColumnas)
             columnasActuales.innerHTML = FxC
             contadorColumnas = contadorColumnas + 1
@@ -101,9 +101,5 @@ function generarTablaHTML(valFilas, valColumnas) {
         contadorColumnas = 0
         contadorFilas = contadorFilas + 1
     }
-
-    
-    
-    
 
 }
