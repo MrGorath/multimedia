@@ -83,8 +83,8 @@ function generarTablaHTML(valFilas, valColumnas) {
 
     var contadorFilas = 0
     var contadorColumnas = 0
-    var filasActuales
-    var columnasActuales
+    var filasActuales = 0
+    var columnasActuales = 0
     var TablaFC = document.getElementById('tblFilas_y_Columnas')
     var FxC = valFilas * valColumnas
     
