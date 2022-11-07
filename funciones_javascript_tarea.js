@@ -14,7 +14,7 @@ F = 32 + ( 9 * gradosCentigrados / 5)
 
 function convertirGradosCentigradosAGradosFahrenheint(gradosCentigrados) {
 
-    var ResCF = document.getElementById("RespuestaCF") 
+    var ResCF = document.getElementById(parseFloat("RespuestaCF")) 
     var gradosFahrenheint = 0
 
     gradosFahrenheint = 32 + ( 9 * gradosCentigrados / 5)
@@ -54,7 +54,7 @@ cálculos correspondientes. (1 pt)
 
 function calcularPorcentajes(NumeroP) {
 
-    var ResP = document.getElementById("RespuestaP") 
+    var ResP = document.getElementById(parseFloat("RespuestaP"))
     var valorCalculado = 0
 
     if(NumeroP < 500 ){
