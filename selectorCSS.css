@@ -1,0 +1,29 @@
+/*
+p {
+    color: blue;   
+}
+
+/*
+
+*/
+article p {    
+    color: aqua;    
+}
+
+/*
+
+article > p {
+    color: violet;
+}
+
+article + p {
+    color: brown;    
+}
+
+h1 ~ p {
+    color: seagreen;    
+}
+
+article > * {
+    color: rosybrown;    
+}
