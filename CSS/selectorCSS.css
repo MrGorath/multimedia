@@ -29,7 +29,7 @@ article > * {
 }
 
 p.destacado {
-    color: bisque;
+    color: goldenrod;
 }
 
 .error {
@@ -47,3 +47,19 @@ p.destacado {
 p#destacado {
     color: blueviolet;
 }
+
+body { margin: 0.5in; }
+ 
+h1 { line-height: 2cm; }
+ 
+p { word-spacing: 4mm; }
+ 
+a { font-size: 12pt }
+ 
+span { font-size: 1pc }
+
+p { color: rgb(71, 98, 176); }
+
+p { color: rgb(27%, 38%, 69%); }
+
+p { color: #4762B0; }

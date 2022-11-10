@@ -12,86 +12,91 @@
 
 </head>
 
-    <body>
-        
-        <hr>
-        <h1>Ejercicio 1</h1>
-        <hr>
+<body>
 
-        <form>
+    <hr>
+    <h1>Ejercicio 1</h1>
+    <hr>
 
-            <fieldset>
+    <form>
 
-                <legend>Ingrese la temperatura a convertir</legend>
+        <fieldset>
 
-                <label for="txtgradosCentigrados">Grados centigrados</label>
-                <input type="text" value="0" id="txtgradosCentigrados" name="txtgradosCentigrados">
+            <legend>Ingrese la temperatura a convertir</legend>
 
-            </fieldset>
+            <label for="txtgradosCentigrados">Grados centigrados</label>
+            <input type="text" value="0" id="txtgradosCentigrados" name="txtgradosCentigrados">
 
-            <br>
+        </fieldset>
 
-            <input type="button" value="Convertir a Fahrenheint" name="btnCalcular" 
+        <br>
+
+        <input type="button" value="Convertir a Fahrenheint" name="btnCalcular"
             onclick="convertirGradosCentigradosAGradosFahrenheint(parseFloat(document.getElementById('txtgradosCentigrados').value))">
 
-        </form>
+    </form>
 
-        <h3>Resultado</h3>
-        
-        <span id="RespuestaCF"></span>
+    <h3>Resultado</h3>
 
-        <hr>
-        <h1>Ejercicio 2</h1>
-        <hr>
+    <span id="RespuestaCF"></span>
 
-        <form>
+    <hr>
+    <h1>Ejercicio 2</h1>
+    <hr>
 
-            <fieldset>
+    <form>
 
-                <legend>Ingrese un porcentaje</legend>
+        <fieldset>
 
-                <label for="txtporcentaje">Porcentaje</label>
-                <input type="text" value="0" id="txtporcentaje" name="txtporcentaje">
+            <legend>Ingrese un porcentaje</legend>
 
-            </fieldset>
+            <label for="txtporcentaje">Porcentaje</label>
+            <input type="text" value="0" id="txtporcentaje" name="txtporcentaje">
 
-            <br>
+        </fieldset>
 
-            <input type="button" value="Calcular porcentaje" name="btnCalcular" 
+        <br>
+
+        <input type="button" value="Calcular porcentaje" name="btnCalcular"
             onclick="calcularPorcentajes(parseFloat(document.getElementById('txtporcentaje').value))">
 
-        </form>
+    </form>
 
-        <h3>Resultados</h3>
-        
-        <span id="RespuestaP"></span>
+    <h3>Resultados</h3>
 
-        <hr>
-        <h1>Ejercicio 3</h1>
-        <hr>
+    <span id="RespuestaP"></span>
 
-        <form>
+    <hr>
+    <h1>Ejercicio 3</h1>
+    <hr>
 
-            <fieldset>
+    <form>
 
-                <legend>Ingrese el numero de filas y de columnas</legend>
+        <fieldset>
 
-                <label for="txtfilas">Filas: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
-                <input type="text" value="0" id="txtfilas" name="txtfilas">
-                <br>
-                <label for="txtcolumnas">Columnas: &nbsp;</label>
-                <input type="text" value="0" id="txtcolumnas" name="txtcolumnas">
+            <legend>Ingrese el numero de filas y de columnas</legend>
 
-            </fieldset>
-
+            <label for="txtfilas">Filas: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+            <input type="text" value="0" id="txtfilas" name="txtfilas">
+           
             <br>
 
-            <input type="button" value="Establecer tabla" name="btnCalcular" 
-            onclick="generarTablaHTML(parseInt(document.getElementById('txtfilas' + 'txtcolumnas').value))">
+            <label for="txtcolumnas">Columnas: &nbsp;</label>
+            <input type="text" value="0" id="txtcolumnas" name="txtcolumnas">
+            
+        </fieldset>
 
-        </form>
+        <br>
 
+        <input type="button" value="Generar Tabla" name="btnCalcular" onclick="generarTablaHTML(
+            parseInt(document.getElementById('txtfilas').value), parseInt(document.getElementById('txtcolumnas').value))">
 
-    </body>
+    </form>
+
+    <h3>Resultado</h3>
+
+    <table id="tblFilas_y_Columnas" border="2"></table>
+
+</body>
 
 </html>
