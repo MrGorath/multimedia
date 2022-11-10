@@ -14,30 +14,30 @@ F = 32 + ( 9 * gradosCentigrados / 5)
 
 function convertirGradosCentigradosAGradosFahrenheint(gradosCentigrados) {
 
-    var ResCF = document.getElementById(parseFloat("RespuestaCF")) 
+    var ResCF = document.getElementById(parseFloat("RespuestaCF"))
     var gradosFahrenheint = 0
 
-    gradosFahrenheint = 32 + ( 9 * gradosCentigrados / 5)
-   
+    gradosFahrenheint = 32 + (9 * gradosCentigrados / 5)
+
     if (gradosFahrenheint >= 212) {
 
         ResCF.innerText = gradosFahrenheint + " °F" + " Punto de ebullición del agua"
-        
-    } else if (gradosFahrenheint  >= 98.6 && gradosFahrenheint < 212) {
 
-        ResCF.innerText = gradosFahrenheint + " °F" + " Temperatura del cuerpo humano"        
+    } else if (gradosFahrenheint >= 98.6 && gradosFahrenheint < 212) {
 
-    } else if (gradosFahrenheint  >= 77 && gradosFahrenheint < 98.6) {
+        ResCF.innerText = gradosFahrenheint + " °F" + " Temperatura del cuerpo humano"
 
-        ResCF.innerText = gradosFahrenheint + " °F" + " Temperatura ambiente"        
+    } else if (gradosFahrenheint >= 77 && gradosFahrenheint < 98.6) {
 
-    } else if (gradosFahrenheint  >= 32 && gradosFahrenheint < 77) {
+        ResCF.innerText = gradosFahrenheint + " °F" + " Temperatura ambiente"
 
-        ResCF.innerText = gradosFahrenheint + " °F" + " Punto de congelación del agua"        
+    } else if (gradosFahrenheint >= 32 && gradosFahrenheint < 77) {
 
-    } else if (gradosFahrenheint  >= -459.58 && gradosFahrenheint < 32) {
+        ResCF.innerText = gradosFahrenheint + " °F" + " Punto de congelación del agua"
 
-        ResCF.innerText = gradosFahrenheint + " °F" + " Cero absoluto"        
+    } else if (gradosFahrenheint >= -459.58 && gradosFahrenheint < 32) {
+
+        ResCF.innerText = gradosFahrenheint + " °F" + " Cero absoluto"
 
     }
 
@@ -57,15 +57,15 @@ function calcularPorcentajes(NumeroP) {
     var ResP = document.getElementById(parseFloat("RespuestaP"))
     var valorCalculado = 0
 
-    if(NumeroP < 500 ){
+    if (NumeroP < 500) {
 
         valorCalculado = NumeroP + (NumeroP * 0.5)
-        ResP.innerText = "El valor ingresado es: "+ NumeroP +" y el valor calculado es: " + valorCalculado
+        ResP.innerText = "El valor ingresado es: " + NumeroP + " y el valor calculado es: " + valorCalculado
 
-    }else if (NumeroP >= 500 ) {
+    } else if (NumeroP >= 500) {
 
         valorCalculado = NumeroP + (NumeroP * 0.07)
-        ResP.innerText = "El valor ingresado es: "+ NumeroP +" y el valor calculado es: " + valorCalculado        
+        ResP.innerText = "El valor ingresado es: " + NumeroP + " y el valor calculado es: " + valorCalculado
 
     }
 
@@ -87,11 +87,11 @@ function generarTablaHTML(valFilas, valColumnas) {
     var columnasActuales = 0
     var TablaFC = document.getElementById('tblFilas_y_Columnas')
     var FxC = valFilas * valColumnas
-    
-    while (contadorFilas < valFilas){        
+
+    while (contadorFilas < valFilas) {
         filasActuales = TablaFC.insertRow(contadorFilas)
 
-        while (contadorColumnas < valColumnas){            
+        while (contadorColumnas < valColumnas) {
             columnasActuales = filasActuales.insertCell(contadorColumnas)
             columnasActuales.innerHTML = FxC
             contadorColumnas = contadorColumnas + 1

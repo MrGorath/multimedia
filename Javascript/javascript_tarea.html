@@ -78,17 +78,18 @@
 
             <label for="txtfilas">Filas: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
             <input type="text" value="0" id="txtfilas" name="txtfilas">
-           
+
             <br>
 
             <label for="txtcolumnas">Columnas: &nbsp;</label>
             <input type="text" value="0" id="txtcolumnas" name="txtcolumnas">
-            
+
         </fieldset>
 
         <br>
 
-        <input type="button" value="Generar Tabla" name="btnCalcular" onclick="generarTablaHTML(
+        <input type="button" value="Generar Tabla" name="btnCalcular"
+            onclick="generarTablaHTML(
             parseInt(document.getElementById('txtfilas').value), parseInt(document.getElementById('txtcolumnas').value))">
 
     </form>
