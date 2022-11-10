@@ -3,14 +3,9 @@ p {
     color: blue;   
 }
 
-/*
-
-*/
 article p {    
     color: aqua;    
 }
-
-/*
 
 article > p {
     color: violet;
@@ -26,4 +21,29 @@ h1 ~ p {
 
 article > * {
     color: rosybrown;    
+}
+ */
+
+.destacado {
+    color: red;
+}
+
+p.destacado {
+    color: bisque;
+}
+
+.error {
+    color: red;
+}
+
+.destacado {
+    font-size: 15px;
+}
+
+.especial {
+    font-weight: bold;
+}
+
+p#destacado {
+    color: blueviolet;
 }
