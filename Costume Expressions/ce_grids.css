@@ -21,15 +21,14 @@ div.row {
     clear: both;
 }
 
-div.row::after {
+div.row {
     display: table;
-    content: "";
     clear: both;
 }
 
 /* Grid Columns Styles */
 
-div[class^="column"] {
+div[class ^= "column"] {
     float: left;
 }
 
@@ -77,8 +76,8 @@ div.column80 {
 
 div.container,
 div.row,
-div[class^="column"],
-div[class$="cell"],
-div[class$="cell"] a {
+div[class ^= "column"],
+div[class $= "cell"],
+div[class $= "cell"] a {
     box-sizing: border-box;
 }

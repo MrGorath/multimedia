@@ -76,7 +76,7 @@ div#container {
     padding-bottom: 8px;
 }
 
-div[class$="cell"] a {
+div [class $= "cell"] a {
     display: block;
     width: 100%;
     padding-top: 8px;
