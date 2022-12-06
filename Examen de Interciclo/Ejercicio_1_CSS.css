@@ -1,20 +1,21 @@
 html{
 	font-family: 'Times New Roman', Times, serif;
 }
+
 body {
 	width: 100%;
 	min-width: 320px;
 }
 
 body section {
-	float: left;
+	float: left;	
 }
 
 body h1 {		
 	display: block;
 	float: left;
 	width: 70%;
-	margin-left: 24%;
+	margin-left: 379px;
 }
 
 body section:nth-of-type(2) {
